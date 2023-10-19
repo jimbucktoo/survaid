@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survaid</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./styles/materialize.min.css" media="screen,projection">
+        <link rel="stylesheet" type="text/css" href="./styles/app.css">
+        <link rel="icon" type="image/png" href="/favicon.ico">
+    </head>
+    <body>
+        <div>
+            <div class="row" style="margin-bottom: 0px;">
+                <nav>
+                    <div class="nav-wrapper navbar z-depth-3">
+                        <a href="/" class="brand-logo survaidLogo"><img class="logoIcon" src="./images/survaid.png"/><span style="color: #026EFF;">Surv</span><span style="color: #F15E23;">aid</span></a>
+                        <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-small-only">
+                            <li><a href="/participants.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 participants">Participants</a></li>
+                            <li><a href="/researchers.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 researchers">Researchers</a></li>
+                            <li><a href="/pricing.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 pricing">Plans & Pricing</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="sidenav" id="mobile-demo">
+                    <li class="sidenavtitle"><a class="sidenavtitlelink" href="/index.html">Survaid</a></li>
+                    <li><a href="/participants.html">Participants</a></li>
+                    <li><a href="/researchers.html">Researchers</a></li>
+                    <li><a href="/pricing.html">Plans & Pricing</a></li>
+                </ul>
+                <div class="category">
+                    <h3 class="categoryTitle"><i class="material-icons titleIcon">assignment</i>Seamless Survey Creation</h3>
+                </div>
+                <div class="featureContainer">
+                    <div class="feature reverse">
+                        <div class="featureDetailsLeft">
+                            <h3 class="title">
+                                Seamless Survey Creation
+                            </h3>
+                            <p class="description">Survaid offers a seamless and versatile platform for creating engaging surveys that cater to a diverse array of research needs. Its wide range of question types, including Binary, Text, Number, Slider, Likert Scale, Multiple Choice, and Checkbox, and many more, enabling researchers to tailor their questions precisely to the requirements of their research.</p>
+                            <p class="description">Survaid leverages smartphone sensors to provide an immersive and informative data collection experience. By incorporating sensors such as Camera, Microphone, Speakers, Accelerometer, Pedometer, Altimeter, Ambient Light and GPS Location, and many more, the platform improves the survey taking experience, bringing a new dimension of engagement and insight.</p>
+                            <p class="description">Furthermore, using sensor input can provide data on users' physical activity and location, facilitating the analysis of exercise on mood and behavior by monitoring participants’ behavioral patterns and movements. Survaid's user friendly design ensures flexibility in survey creation, allowing researchers to adapt their surveys to meet their unique research requirements. Survaid's user friendly interface and innovative use of smartphone sensors provide a dynamic and insightful survey creation platform, tailored to various research needs and enhancing user engagement and data collection.</p>
+                        </div>
+                        <img class="screenshotApp" src="./images/Survey.png"/>
+                    </div>
+                </div>
+                <footer class="page-footer footer">
+                    <div class="row">
+                        <div class="footerLinks">
+                            <a class="footerLink" href="/participants.html">Participants</a>
+                            <a class="footerLink" href="/researchers.html">Researchers</a>
+                            <a class="footerLink" href="/pricing.html">Plans & Pricing</a>
+                        </div>
+                    </div>
+                    <center>
+                        <div class="footer-copyright copyright">
+                            <div class="container">
+                                © 2023 Survaid LLC
+                            </div>
+                        </div>
+                    </center>
+                </footer>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+                <script type="text/javascript" src="./scripts/materialize.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('.sidenav').sidenav();
+
+                        $('.features').click(function() {
+                            window.location = "/features.html"
+                        })
+
+                        $('.pricing').click(function() {
+                            window.location = "/pricing.html"
+                        })
+
+                        $('.participate').click(function() {
+                            window.location = "/participate.html"
+                        })
+                    });
+                </script>
+    </body>
+</html>

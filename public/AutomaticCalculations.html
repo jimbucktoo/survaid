@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survaid</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./styles/materialize.min.css" media="screen,projection">
+        <link rel="stylesheet" type="text/css" href="./styles/app.css">
+        <link rel="icon" type="image/png" href="/favicon.ico">
+    </head>
+    <body>
+        <div>
+            <div class="row" style="margin-bottom: 0px;">
+                <nav>
+                    <div class="nav-wrapper navbar z-depth-3">
+                        <a href="/" class="brand-logo survaidLogo"><img class="logoIcon" src="./images/survaid.png"/><span style="color: #026EFF;">Surv</span><span style="color: #F15E23;">aid</span></a>
+                        <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-small-only">
+                            <li><a href="/participants.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 participants">Participants</a></li>
+                            <li><a href="/researchers.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 researchers">Researchers</a></li>
+                            <li><a href="/pricing.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 pricing">Plans & Pricing</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="sidenav" id="mobile-demo">
+                    <li class="sidenavtitle"><a class="sidenavtitlelink" href="/index.html">Survaid</a></li>
+                    <li><a href="/participants.html">Participants</a></li>
+                    <li><a href="/researchers.html">Researchers</a></li>
+                    <li><a href="/pricing.html">Plans & Pricing</a></li>
+                </ul>
+                <div class="category">
+                    <h3 class="categoryTitle"><i class="material-icons titleIcon">layers</i>Automatic Calculations</h3>
+                </div>
+                <div class="featureContainer">
+                    <div class="feature">
+                        <img id="screenshotContent" class="screenshotApp" src="./images/CalculationsApp.png"/>
+                        <div class="featureDetailsRight">
+                            <h3 class="title">
+                                Automatic Calculations
+                            </h3>
+                            <p class="description">In today's data rich landscape, the effective and efficient collection and analysis of information are critical. Automatic mathematical calculations integrated into surveys are an effective tool to enhance this process, allowing for a dynamic and comprehensive survey experience. These calculations come from the input harnessed from sensors on the user's device, significantly improving the depth and quality of the survey data.</p>
+                            <p class="description">The integration of real-time calculations into surveys engages users in the data collection process. This not only improves the survey taking experience but ensures that users contribute the most relevant and meaningful information possible.</p>
+                            <p class="description">Automating mathematical calculations improves the efficiency and accuracy of the data collection process. It significantly reduces the probability of human error and saves time by instantly and accurately performing complex calculations that would otherwise require manual labor. This advancement empowers researchers to collect large volumes of high quality data in a fraction of the time it would typically take.</p>
+                            <p class="description">Integrating automatic mathematical calculations into surveys offers an effective way to optimize data collection, promoting engagement, accuracy, and efficiency while tailoring the survey experience to specific objectives.</p>
+                        </div>
+                    </div>
+                </div>
+                <footer class="page-footer footer">
+                    <div class="row">
+                        <div class="footerLinks">
+                            <a class="footerLink" href="/participants.html">Participants</a>
+                            <a class="footerLink" href="/researchers.html">Researchers</a>
+                            <a class="footerLink" href="/pricing.html">Plans & Pricing</a>
+                        </div>
+                    </div>
+                    <center>
+                        <div class="footer-copyright copyright">
+                            <div class="container">
+                                © 2023 Survaid LLC
+                            </div>
+                        </div>
+                    </center>
+                </footer>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+                <script type="text/javascript" src="./scripts/materialize.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('.sidenav').sidenav();
+
+                        $('.features').click(function() {
+                            window.location = "/features.html"
+                        })
+
+                        $('.pricing').click(function() {
+                            window.location = "/pricing.html"
+                        })
+
+                        $('.participate').click(function() {
+                            window.location = "/participate.html"
+                        })
+                    });
+                </script>
+    </body>
+</html>

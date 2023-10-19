@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survaid</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./styles/materialize.min.css" media="screen,projection">
+        <link rel="stylesheet" type="text/css" href="./styles/app.css">
+        <link rel="icon" type="image/png" href="/favicon.ico">
+    </head>
+    <body>
+        <div>
+            <div class="row" style="margin-bottom: 0px;">
+                <nav>
+                    <div class="nav-wrapper navbar z-depth-3">
+                        <a href="/" class="brand-logo survaidLogo"><img class="logoIcon" src="./images/survaid.png"/><span style="color: #026EFF;">Surv</span><span style="color: #F15E23;">aid</span></a>
+                        <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-small-only">
+                            <li><a href="/participants.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 participants">Participants</a></li>
+                            <li><a href="/researchers.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 researchers">Researchers</a></li>
+                            <li><a href="/pricing.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 pricing">Plans & Pricing</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="sidenav" id="mobile-demo">
+                    <li class="sidenavtitle"><a class="sidenavtitlelink" href="/index.html">Survaid</a></li>
+                    <li><a href="/participants.html">Participants</a></li>
+                    <li><a href="/researchers.html">Researchers</a></li>
+                    <li><a href="/pricing.html">Plans & Pricing</a></li>
+                </ul>
+                <div class="category">
+                    <h3 class="categoryTitle"><i class="material-icons titleIcon">find_in_page</i>Empowering Research</h3>
+                </div>
+                <div class="featureContainer">
+                    <div class="feature">
+                        <img class="screenshot" src="./images/Login.png"/>
+                        <div class="featureDetailsRight">
+                            <h3 class="title">
+                                Empowering Research
+                            </h3>
+                            <p class="description">Survaid is more than an app. It's a game changing platform revolutionizing research. By granting real-time access to mobile sensor data and offering comprehensive data driven insights, Survaid transforms the landscape of data collection.</p>
+                            <p class="description">In critical sectors like healthcare and marketing, collecting participant data is fundamental. Surveys have long been a powerful tool for this, but the number of challenges have increased over the past two decades. Rising operating costs, low response rates, and non-response bias makes effective data collection challenging. Researchers now invest significant resources in creating questionnaires and offering incentives to combat non-response bias. Without this investment, response rates plummet, decreasing credibility. Achieving accurate survey results is harder than ever.</p>
+                            <p class="description">Introducing Survaid—a solution designed to revolutionize the data collection process. We empower researchers to gather real-time, reliable, cost effective data from participants' mobile devices, leveraging sensor technology like GPS location and pedometers. Survaid automates participant recruitment and offers detailed reports to researchers.</p>
+                            <p class="description">Participants are incentivized through placement fees and are rated based on their commitment and reliability. Flexibility is key. Participants can choose which surveys to respond to and when, even offline. Our Applicant Queue system matches participants with suitable surveys based on their profile, including expertise, reliability, and personality. Tailor your survey experience by filtering for specific criteria like pay rate or survey location.</p>
+                            <p class="description">Survaid redefines the data collection process, making it intuitive and user friendly. Join us in our mission to redefine research methods. Download the Survaid app today and shape the future of research!</p>
+                        </div>
+                    </div>
+                </div>
+                <footer class="page-footer footer">
+                    <div class="row">
+                        <div class="footerLinks">
+                            <a class="footerLink" href="/participants.html">Participants</a>
+                            <a class="footerLink" href="/researchers.html">Researchers</a>
+                            <a class="footerLink" href="/pricing.html">Plans & Pricing</a>
+                        </div>
+                    </div>
+                    <center>
+                        <div class="footer-copyright copyright">
+                            <div class="container">
+                                © 2023 Survaid LLC
+                            </div>
+                        </div>
+                    </center>
+                </footer>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+                <script type="text/javascript" src="./scripts/materialize.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('.sidenav').sidenav();
+
+                        $('.features').click(function() {
+                            window.location = "/features.html"
+                        })
+
+                        $('.pricing').click(function() {
+                            window.location = "/pricing.html"
+                        })
+
+                        $('.participate').click(function() {
+                            window.location = "/participate.html"
+                        })
+                    });
+                </script>
+    </body>
+</html>

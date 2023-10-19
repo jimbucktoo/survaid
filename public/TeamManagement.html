@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survaid</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./styles/materialize.min.css" media="screen,projection">
+        <link rel="stylesheet" type="text/css" href="./styles/app.css">
+        <link rel="icon" type="image/png" href="/favicon.ico">
+    </head>
+    <body>
+        <div>
+            <div class="row" style="margin-bottom: 0px;">
+                <nav>
+                    <div class="nav-wrapper navbar z-depth-3">
+                        <a href="/" class="brand-logo survaidLogo"><img class="logoIcon" src="./images/survaid.png"/><span style="color: #026EFF;">Surv</span><span style="color: #F15E23;">aid</span></a>
+                        <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-small-only">
+                            <li><a href="/participants.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 participants">Participants</a></li>
+                            <li><a href="/researchers.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 researchers">Researchers</a></li>
+                            <li><a href="/pricing.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 pricing">Plans & Pricing</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="sidenav" id="mobile-demo">
+                    <li class="sidenavtitle"><a class="sidenavtitlelink" href="/index.html">Survaid</a></li>
+                    <li><a href="/participants.html">Participants</a></li>
+                    <li><a href="/researchers.html">Researchers</a></li>
+                    <li><a href="/pricing.html">Plans & Pricing</a></li>
+                </ul>
+                <div class="category">
+                    <h3 class="categoryTitle"><i class="material-icons titleIcon">people</i>Team Management</h3>
+                </div>
+                <div class="featureContainer">
+                    <div class="feature reverse">
+                        <div class="featureDetailsLeft">
+                            <h3 class="title">
+                                Team Management
+                            </h3>
+                            <p class="description">Survaid's team management tools extend beyond the fundamental capabilities of survey creation, aiming to optimize the entire process through comprehensive features that enhance teamwork and productivity. One of the essential aspects is role assignment. The platform allows you to define specific roles for each team member, customizing their access and responsibilities in alignment with the team's structure and project needs. For instance, team members can be assigned roles such as survey creation, viewing, editing, deletion, or data exporting, enabling a structured workflow and maintaining control over the project.</p>
+                            <p class="description">In addition to role assignment, Survaid supports user and group management. This feature allows the categorization of team members based on their project affiliation. By grouping users, the platform streamlines the process of assigning surveys, managing access, and distributing responsibilities. This proves especially useful when managing larger teams and complex projects, improving administration of surveys.</p>
+                            <p class="description">Furthermore, Survaid supports real-time collaboration, allowing multiple team members to work simultaneously on various aspects of a survey. This includes design, content, logic, and data analysis, promoting efficient survey project management. Real-time collaboration encourages dynamic input from team members, leading to well rounded and meticulously refined survey projects.</p>
+                            <p class="description">Survaid's team management tools are an essential asset for researchers seeking a collaborative and efficient approach to survey administration. The platform's feature packed environment, including role customization, team management, and real-time collaboration capabilities, supports an environment of effective cooperation, resulting in seamless survey administration.</p>
+                        </div>
+                        <img class="screenshotApp" src="./images/TeamManagement.png"/>
+                    </div>
+                </div>
+                <footer class="page-footer footer">
+                    <div class="row">
+                        <div class="footerLinks">
+                            <a class="footerLink" href="/participants.html">Participants</a>
+                            <a class="footerLink" href="/researchers.html">Researchers</a>
+                            <a class="footerLink" href="/pricing.html">Plans & Pricing</a>
+                        </div>
+                    </div>
+                    <center>
+                        <div class="footer-copyright copyright">
+                            <div class="container">
+                                © 2023 Survaid LLC
+                            </div>
+                        </div>
+                    </center>
+                </footer>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+                <script type="text/javascript" src="./scripts/materialize.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('.sidenav').sidenav();
+
+                        $('.features').click(function() {
+                            window.location = "/features.html"
+                        })
+
+                        $('.pricing').click(function() {
+                            window.location = "/pricing.html"
+                        })
+
+                        $('.participate').click(function() {
+                            window.location = "/participate.html"
+                        })
+                    });
+                </script>
+    </body>
+</html>

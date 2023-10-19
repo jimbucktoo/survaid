@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survaid</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./styles/materialize.min.css" media="screen,projection">
+        <link rel="stylesheet" type="text/css" href="./styles/app.css">
+        <link rel="icon" type="image/png" href="/favicon.ico">
+    </head>
+    <body>
+        <div>
+            <div class="row" style="margin-bottom: 0px;">
+                <nav>
+                    <div class="nav-wrapper navbar z-depth-3">
+                        <a href="/" class="brand-logo survaidLogo"><img class="logoIcon" src="./images/survaid.png"/><span style="color: #026EFF;">Surv</span><span style="color: #F15E23;">aid</span></a>
+                        <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-small-only">
+                            <li><a href="/participants.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 participants">Participants</a></li>
+                            <li><a href="/researchers.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 researchers">Researchers</a></li>
+                            <li><a href="/pricing.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 pricing">Plans & Pricing</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="sidenav" id="mobile-demo">
+                    <li class="sidenavtitle"><a class="sidenavtitlelink" href="/index.html">Survaid</a></li>
+                    <li><a href="/participants.html">Participants</a></li>
+                    <li><a href="/researchers.html">Researchers</a></li>
+                    <li><a href="/pricing.html">Plans & Pricing</a></li>
+                </ul>
+                <div class="category">
+                    <h3 class="categoryTitle"><i class="material-icons titleIcon">timeline</i>Visually Rich Graphs</h3>
+                </div>
+                <div class="featureContainer">
+                    <div class="feature reverse">
+                        <div class="featureDetailsLeft">
+                            <h3 class="title">
+                                Visually Rich Graphs
+                            </h3>
+                            <p class="description">Survaid offers a dynamic platform for survey data analysis through visually rich graphs, providing a simple and impactful representation of survey results. The website showcases a variety of customizable chart templates, enabling researchers to effortlessly create engaging visuals.</p>
+                            <p class="description">Our platform excels in simplifying data analysis by transforming survey responses into visually appealing formats that facilitate easy analysis and evaluation. The range of visually rich graphs covers a diverse set of graph types, such as line graphs, bar graphs, scatter plots, histograms and more, allowing users to explore survey data from different perspectives.</p>
+                            <p class="description">Survaid is perfect for researchers and businesses seeking to visually represent their survey data with precision and engagement. The platform provides a powerful set of customizable templates and features to create professional visual content that assists in revealing hidden trends.</p>
+                            <p class="description">Furthermore, Survaid allows users to export their visuals to commonly used formats like PDF, JPEG, or PNG for seamless integration into reports and presentations. The platform even facilitates automated reporting, enabling regular email updates of customized dashboards, further enhancing the efficiency and utility of the tool.</p>
+                            <p class="description">Survaid stands as an indispensable tool for transforming survey data into visually rich graphs, empowering effective data analysis and insightful representation for various applications.</p>
+                        </div>
+                        <img class="screenshotApp" src="./images/Analytics.png"/>
+                    </div>
+                </div>
+                <footer class="page-footer footer">
+                    <div class="row">
+                        <div class="footerLinks">
+                            <a class="footerLink" href="/participants.html">Participants</a>
+                            <a class="footerLink" href="/researchers.html">Researchers</a>
+                            <a class="footerLink" href="/pricing.html">Plans & Pricing</a>
+                        </div>
+                    </div>
+                    <center>
+                        <div class="footer-copyright copyright">
+                            <div class="container">
+                                © 2023 Survaid LLC
+                            </div>
+                        </div>
+                    </center>
+                </footer>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+                <script type="text/javascript" src="./scripts/materialize.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('.sidenav').sidenav();
+
+                        $('.features').click(function() {
+                            window.location = "/features.html"
+                        })
+
+                        $('.pricing').click(function() {
+                            window.location = "/pricing.html"
+                        })
+
+                        $('.participate').click(function() {
+                            window.location = "/participate.html"
+                        })
+                    });
+                </script>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survaid</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./styles/materialize.min.css" media="screen,projection">
+        <link rel="stylesheet" type="text/css" href="./styles/app.css">
+        <link rel="icon" type="image/png" href="/favicon.ico">
+    </head>
+    <body>
+        <div>
+            <div class="row" style="margin-bottom: 0px;">
+                <nav>
+                    <div class="nav-wrapper navbar z-depth-3">
+                        <a href="/" class="brand-logo survaidLogo"><img class="logoIcon" src="./images/survaid.png"/><span style="color: #026EFF;">Surv</span><span style="color: #F15E23;">aid</span></a>
+                        <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-small-only">
+                            <li><a href="/participants.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 participants">Participants</a></li>
+                            <li><a href="/researchers.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 researchers">Researchers</a></li>
+                            <li><a href="/pricing.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 pricing">Plans & Pricing</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="sidenav" id="mobile-demo">
+                    <li class="sidenavtitle"><a class="sidenavtitlelink" href="/index.html">Survaid</a></li>
+                    <li><a href="/participants.html">Participants</a></li>
+                    <li><a href="/researchers.html">Researchers</a></li>
+                    <li><a href="/pricing.html">Plans & Pricing</a></li>
+                </ul>
+                <div class="category">
+                    <h3 class="categoryTitle"><i class="material-icons titleIcon">assessment</i>Researchers</h3>
+                </div>
+                <div class="featureContainer">
+                    <div class="feature reverse">
+                        <div class="featureDetailsLeft">
+                            <h3 class="title">
+                                Seamless Survey Creation
+                            </h3>
+                            <p class="description">Create engaging surveys effortlessly with our mobile survey builder, no technical skills required. Choose from a wide range of unique field options that fit your preferences and needs.</p>
+                            <p class="description">Take your surveys to the next level by implementing branching logic and data validation conditions, enhancing the quality and relevance of the responses you receive. With our simple to use interface, keeping participants engaged and informed has never been simpler, allowing for a smooth survey creation process and a more engaging research experience.</p>
+                            <button class="waves-effect waves-light btn-large primaryGoal seamlessSurveyCreation">Learn about survey creation →</button>
+                        </div>
+                        <img class="screenshotApp" src="./images/Survey.png"/>
+                    </div>
+                    <div class="feature">
+                        <img id="screenshotContent" class="screenshotApp" src="./images/BranchingApp.png"/>
+                        <div class="featureDetailsRight">
+                            <h3 class="title">
+                                Limitless Branching Logic
+                            </h3>
+                            <p class="description">Design intricate survey paths using easy to understand arithmetic and logical rules. Connect and organize your questions seamlessly, creating a top notch mobile survey adventure.</p>
+                            <button class="waves-effect waves-light btn-large primaryGoal limitlessBranchingLogic">Learn about branching →</button>
+                        </div>
+                    </div>
+                    <div class="feature reverse">
+                        <div class="featureDetailsLeft">
+                            <h3 class="title">
+                                Team Management
+                            </h3>
+                            <p class="description">As your team grows, it's essential to have the right controls for your study.</p>
+                            <p class="description">With our user friendly permissions manager, tailor access easily! Assign specific roles like creating surveys, viewing surveys, editing surveys, deleting surveys, or exporting data to users or groups you create.</p>
+                            <button class="waves-effect waves-light btn-large primaryGoal teamManagement">Learn about team management →</button>
+                        </div>
+                        <img class="screenshotApp" src="./images/TeamManagement.png"/>
+                    </div>
+                    <div class="feature">
+                        <img id="screenshotContent" class="screenshotApp" src="./images/CalculationsApp.png"/>
+                        <div class="featureDetailsRight">
+                            <h3 class="title">
+                                Automatic Calculations
+                            </h3>
+                            <p class="description">Make your surveys even smarter by automating mathematic calculations. Provide real-time calculations during data collection, helping participants share more meaningful information.</p>
+                            <button class="waves-effect waves-light btn-large primaryGoal automaticCalculations">Learn about calculations →</button>
+                        </div>
+                    </div>
+                    <div class="feature reverse">
+                        <div class="featureDetailsLeft">
+                            <h3 class="title">
+                                Visually Rich Graphs
+                            </h3>
+                            <p class="description">Create stunning graphs and track them as your data evolves. Export these visuals anytime to PDF, JPEG, or PNG for your reports and presentations.</p>
+                            <p class="description">Set up automatic reports to be emailed to your research team regularly.</p>
+                            <p class="description">Customize your dashboards with different graph types like line graphs, bar graphs, scatter plots, histograms and more.</p>
+                            <button class="waves-effect waves-light btn-large primaryGoal visuallyRichGraphs">Learn about graphs →</button>
+                        </div>
+                        <img class="screenshotApp" src="./images/Analytics.png"/>
+                    </div>
+                </div>
+                <footer class="page-footer footer">
+                    <div class="row">
+                        <div class="footerLinks">
+                            <a class="footerLink" href="/participants.html">Participants</a>
+                            <a class="footerLink" href="/researchers.html">Researchers</a>
+                            <a class="footerLink" href="/pricing.html">Plans & Pricing</a>
+                        </div>
+                    </div>
+                    <center>
+                        <div class="footer-copyright copyright">
+                            <div class="container">
+                                © 2023 Survaid LLC
+                            </div>
+                        </div>
+                    </center>
+                </footer>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+                <script type="text/javascript" src="./scripts/materialize.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('.sidenav').sidenav();
+
+                        $('.features').click(function() {
+                            window.location = "/features.html"
+                        })
+
+                        $('.pricing').click(function() {
+                            window.location = "/pricing.html"
+                        })
+
+                        $('.participate').click(function() {
+                            window.location = "/participate.html"
+                        })
+
+                        $('.seamlessSurveyCreation').click(function() {
+                            window.location = "/SeamlessSurveyCreation.html"
+                        })
+
+                        $('.limitlessBranchingLogic').click(function() {
+                            window.location = "/LimitlessBranchingLogic.html"
+                        })
+
+                        $('.teamManagement').click(function() {
+                            window.location = "/TeamManagement.html"
+                        })
+
+                        $('.automaticCalculations').click(function() {
+                            window.location = "/AutomaticCalculations.html"
+                        })
+
+                        $('.visuallyRichGraphs').click(function() {
+                            window.location = "/VisuallyRichGraphs.html"
+                        })
+                    });
+                </script>
+    </body>
+</html>

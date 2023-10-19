@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survaid</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./styles/materialize.min.css" media="screen,projection">
+        <link rel="stylesheet" type="text/css" href="./styles/app.css">
+        <link rel="icon" type="image/png" href="/favicon.ico">
+    </head>
+    <body>
+        <div>
+            <div class="row" style="margin-bottom: 0px;">
+                <nav>
+                    <div class="nav-wrapper navbar z-depth-3">
+                        <a href="/" class="brand-logo survaidLogo"><img class="logoIcon" src="./images/survaid.png"/><span style="color: #026EFF;">Surv</span><span style="color: #F15E23;">aid</span></a>
+                        <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-small-only">
+                            <li><a href="/participants.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 participants">Participants</a></li>
+                            <li><a href="/researchers.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 researchers">Researchers</a></li>
+                            <li><a href="/pricing.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 pricing">Plans & Pricing</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="sidenav" id="mobile-demo">
+                    <li class="sidenavtitle"><a class="sidenavtitlelink" href="/index.html">Survaid</a></li>
+                    <li><a href="/participants.html">Participants</a></li>
+                    <li><a href="/researchers.html">Researchers</a></li>
+                    <li><a href="/pricing.html">Plans & Pricing</a></li>
+                </ul>
+                <div class="category">
+                    <h3 class="categoryTitle"><i class="material-icons titleIcon">person</i>Build Your Brand</h3>
+                </div>
+                <div class="featureContainer">
+                    <div class="feature">
+                        <img class="screenshot" src="./images/Profile.png"/>
+                        <div class="featureDetailsRight">
+                            <h3 class="title">
+                                Build Your Brand
+                            </h3>
+                            <p class="description">Crafting a distinctive profile is a critical step toward positioning yourself at the top of the Applicant Queue, a critical list that researchers consult when selecting survey participants.</p>
+                            <p class="description">In the world of surveys, every detail counts. Profiles detailed in description tend to rank higher in the Applicant Queue, setting you apart from the rest. By creating an engaging and comprehensive "About" section, you can effectively showcase your strengths and personality to researchers. Think of it as a job interview—first impressions matter!</p>
+                            <p class="description">Each survey you complete is a testament to your experience and dedication. Showcase your accomplishments in the 'Completed Surveys' section of your profile, where researchers can see the extensive range of surveys you've participated in. Experience matters, especially if you possess expertise in specific research categories. This section is your platform to proudly display your expertise, significantly enhancing your chances of securing a spot in the Applicant Queue.</p>
+                            <p class="description">As you actively participate in surveys, researchers provide reviews and ratings in the 'Reviews' section of your profile. These reviews offer an overview about your survey participation and successes, allowing you to highlight your reliability and commitment. Your diligence in completing surveys pays off, paving your path to future survey opportunities. Give each survey your best effort—it's an investment that pays dividends!</p>
+                            <p class="description">Creating a comprehensive portfolio of your survey experiences and accomplishments is a strategic move to ascend the ranks in the Applicant Queue and secure prime survey applications. A unique profile tailored to showcase your expertise, reliability, and personality leaves a lasting, positive impression on researchers. Start building your distinct brand today and discover amazing opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+                <footer class="page-footer footer">
+                    <div class="row">
+                        <div class="footerLinks">
+                            <a class="footerLink" href="/participants.html">Participants</a>
+                            <a class="footerLink" href="/researchers.html">Researchers</a>
+                            <a class="footerLink" href="/pricing.html">Plans & Pricing</a>
+                        </div>
+                    </div>
+                    <center>
+                        <div class="footer-copyright copyright">
+                            <div class="container">
+                                © 2023 Survaid LLC
+                            </div>
+                        </div>
+                    </center>
+                </footer>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+                <script type="text/javascript" src="./scripts/materialize.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('.sidenav').sidenav();
+
+                        $('.features').click(function() {
+                            window.location = "/features.html"
+                        })
+
+                        $('.pricing').click(function() {
+                            window.location = "/pricing.html"
+                        })
+
+                        $('.participate').click(function() {
+                            window.location = "/participate.html"
+                        })
+                    });
+                </script>
+    </body>
+</html>

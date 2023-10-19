@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survaid</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./styles/materialize.min.css" media="screen,projection">
+        <link rel="stylesheet" type="text/css" href="./styles/app.css">
+        <link rel="icon" type="image/png" href="/favicon.ico">
+    </head>
+    <body>
+        <div>
+            <div class="row" style="margin-bottom: 0px;">
+                <nav>
+                    <div class="nav-wrapper navbar z-depth-3">
+                        <a href="/" class="brand-logo survaidLogo"><img class="logoIcon" src="./images/survaid.png"/><span style="color: #026EFF;">Surv</span><span style="color: #F15E23;">aid</span></a>
+                        <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-small-only">
+                            <li><a href="/participants.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 participants">Participants</a></li>
+                            <li><a href="/researchers.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 researchers">Researchers</a></li>
+                            <li><a href="/pricing.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 pricing">Plans & Pricing</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="sidenav" id="mobile-demo">
+                    <li class="sidenavtitle"><a class="sidenavtitlelink" href="/index.html">Survaid</a></li>
+                    <li><a href="/participants.html">Participants</a></li>
+                    <li><a href="/researchers.html">Researchers</a></li>
+                    <li><a href="/pricing.html">Plans & Pricing</a></li>
+                </ul>
+                <div class="category">
+                    <h3 class="categoryTitle"><i class="material-icons titleIcon">signal_cellular_off</i>Powerful, Offline Surveys</h3>
+                </div>
+                <div class="featureContainer">
+                    <div class="feature">
+                        <img class="screenshot" src="./images/Surveys.png"/>
+                        <div class="featureDetailsRight">
+                            <h3 class="title">
+                                Powerful, Offline Surveys
+                            </h3>
+                            <p class="description">Struggling with a weak internet connection, especially in rural areas? Worried about staying connected while completing surveys? No need to stress! Survaid empowers participants to tackle surveys anytime, anywhere, overcoming connectivity barriers.</p>
+                            <p class="description">With Survaid, your data is securely backed up on your device even when offline, granting you the freedom to focus on completing surveys without worrying over data loss. Rest easy knowing your hard earned rewards are safe. Experience seamless survey completion—no stable connection required. We handle the complexities for you. Once you're back online, your data is seamlessly synced to our secure cloud server.</p>
+                            <p class="description">Not only can you complete ongoing surveys offline, but you can also explore a diverse range of surveys that match your preferences. Seeking surveys that meet specific criteria? Leverage our powerful survey search filters to refine your options. Filter surveys based on pay rate, category, location, post times, and more. Need insights? Check out past participant comments to ensure the survey aligns with your preferences.</p>
+                            <p class="description">When you discover a survey you're eager to participate in, simply complete the survey's application form, and you'll secure your place in the participant queue, ensuring you never miss an opportunity.</p>
+                            <p class="description">Join us in revolutionizing the survey taking experience to make it enjoyable, accessible, and financially rewarding for all. Thrive in both well connected and connectivity challenged areas. Download the Survaid app today and redefine your survey taking journey!</p>
+                        </div>
+                    </div>
+                </div>
+                <footer class="page-footer footer">
+                    <div class="row">
+                        <div class="footerLinks">
+                            <a class="footerLink" href="/participants.html">Participants</a>
+                            <a class="footerLink" href="/researchers.html">Researchers</a>
+                            <a class="footerLink" href="/pricing.html">Plans & Pricing</a>
+                        </div>
+                    </div>
+                    <center>
+                        <div class="footer-copyright copyright">
+                            <div class="container">
+                                © 2023 Survaid LLC
+                            </div>
+                        </div>
+                    </center>
+                </footer>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+                <script type="text/javascript" src="./scripts/materialize.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('.sidenav').sidenav();
+
+                        $('.features').click(function() {
+                            window.location = "/features.html"
+                        })
+
+                        $('.pricing').click(function() {
+                            window.location = "/pricing.html"
+                        })
+
+                        $('.participate').click(function() {
+                            window.location = "/participate.html"
+                        })
+                    });
+                </script>
+    </body>
+</html>
