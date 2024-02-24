@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survaid</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./styles/materialize.min.css" media="screen,projection">
+        <link rel="stylesheet" type="text/css" href="./styles/app.css">
+        <link rel="icon" type="image/png" href="/favicon.ico">
+    </head>
+    <body>
+        <div>
+            <div class="row" style="margin-bottom: 0px;">
+                <nav>
+                    <div class="nav-wrapper navbar z-depth-3">
+                        <a href="/" class="brand-logo survaidLogo"><img class="logoIcon" src="./images/survaid.png"/><span style="color: #026EFF;">Surv</span><span style="color: #F15E23;">aid</span></a>
+                        <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-small-only">
+                            <li><a href="/participants.html" class="waves-effect waves-light btn secondaryGoal z-depth-0">Participants</a></li>
+                            <li><a href="/researchers.html" class="waves-effect waves-light btn secondaryGoal z-depth-0">Researchers</a></li>
+                            <li><a href="/faq.html" class="waves-effect waves-light btn secondaryGoal z-depth-0">Frequently Asked Questions</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="sidenav" id="mobile-demo">
+                    <li class="sidenavtitle"><a class="sidenavtitlelink" href="/index.html">Survaid</a></li>
+                    <li><a href="/participants.html">Participants</a></li>
+                    <li><a href="/researchers.html">Researchers</a></li>
+                    <li><a href="/faq.html">FAQ</a></li>
+                </ul>
+                <div class="category">
+                    <h3 class="categoryTitle"><i class="material-icons titleIcon">help</i>FAQ</h3>
+                </div>
+                <div class="container faq">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="questions">
+                        <div class="questionRow">
+                            <div class="question">
+                                <h5 class="questionTitle">What is a participant?</h5>
+                                <p class="questionDescription">A <span style="color: #026EFF;">participant</span> is an individual with a Survaid user account, utilizing the mobile application to engage in surveys, providing you with opportunities to earn rewards.</p>
+                            </div>
+                            <div class="question">
+                                <h5 class="questionTitle">What is a researcher?</h5>
+                                <p class="questionDescription">A <span style="color: #026EFF;">researcher</span> is an individual with a Survaid user account, utilizing the web application to create, test, and analyze surveys, providing you with power to gather valuable insights from your participants.</p>
+                            </div>
+                        </div>
+                        <div class="questionRow">
+                            <div class="question">
+                                <h5 class="questionTitle">What is a survey?</h5>
+                                <p class="questionDescription">A <span style="color: #026EFF;">survey</span> is a study created on Survaid, featuring its own set of users and fields. It could be a clinical study, a monitoring and evaluation project, or an agricultural development initiative.</p>
+                            </div>
+                            <div class="question">
+                                <h5 class="questionTitle">How can I delete my account?</h5>
+                                <p class="questionDescription">You can delete your account by sending a request via email to support@survaidapp.com. Alternatively, you may navigate to your settings and choose "Delete Account."</p>
+                            </div>
+                        </div>
+                        <div class="questionRow">
+                            <div class="question">
+                                <h5 class="questionTitle">How is my data stored?</h5>
+                                <p class="questionDescription">Your data is securely stored using AES-256 encryption on Google Firebase servers, which are ISO 27001 compliant. Daily backups are performed for long-term retention. Survaid employees do not have access to your data and decryption only occurs upon your request.</p>
+                            </div>
+                            <div class="question">
+                                <h5 class="questionTitle">Is Survaid secure and HIPAA/GCP Complaint?</h5>
+                                <p class="questionDescription">Yes, Survaid prioritizes security for sensitive and medical data collection. Our platform ensures data encryption for storage and transmission. Survaid complies with <span style="color: #026EFF;">HIPAA</span> and <span style="color: #026EFF;">Good Clinical Practice (GCP)</span> standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="page-footer footer">
+                    <div>
+                        <div class="footerLinks">
+                            <a class="footerLink" href="/participants.html">Participants</a>
+                            <a class="footerLink" href="/researchers.html">Researchers</a>
+                            <a class="footerLink" href="/faq.html">Frequently Asked Questions</a>
+                        </div>
+                    </div>
+                </footer>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+                <script type="text/javascript" src="./scripts/materialize.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        $('.sidenav').sidenav();
+                    });
+                </script>
+    </body>
+</html>

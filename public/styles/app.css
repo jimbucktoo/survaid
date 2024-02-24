@@ -18,17 +18,6 @@ input {
     text-align: center;
 }
 
-.appStore {
-    margin: 0px 0px 50px 0px;
-    flex-direction: column;
-    text-align: center;
-}
-
-.appStoreIcons {
-    width: 150px;
-    height: 50px;
-}
-
 .category {
     background-color: #026EFF;
     padding: 5px 10px 15px 10px;
@@ -39,10 +28,6 @@ input {
 .categoryTitle {
     padding: 0px 0px 0px 30px;
     color: #FFFFFF;
-}
-
-.copyright {
-    color: #FFFFFF !important;
 }
 
 .cover {
@@ -58,17 +43,6 @@ input {
     margin-left: 30px;
     text-align: left;
     color: #000000;
-}
-
-.emailCapture {
-    border: none;
-}
-
-.emailSubmit {
-    height: 42px;
-    vertical-align: 10%;
-    margin-left: 10px;
-    padding: 0px 30px 50px 30px;
 }
 
 .faq {
@@ -120,6 +94,7 @@ input {
 .footer {
     background-color: #000000;
     color: #FFFFFF;
+    padding-bottom: 40px;
 }
 
 .footerLinks {
@@ -130,11 +105,6 @@ input {
     margin-right: 10px;
     display: inline;
     color: #FFFFFF;
-}
-
-.freeTrial {
-    margin: 0 auto;
-    text-align: center;
 }
 
 .header {
@@ -177,12 +147,7 @@ input {
     margin-top: 60px;
 }
 
-.leadership {
-    margin: 100px 0px 100px 0px;
-    width: 100%;
-}
-
-.leadershipBox {
+.team {
     background-color: #FFFFFF;
     color: #000000;
     display: flex;
@@ -237,89 +202,8 @@ input {
     margin-right: 30px;
 }
 
-.plans {
-    margin: 40px auto 60px auto;
-}
-
 .pointer {
     cursor: pointer;
-}
-
-.price {
-    list-style-type: none;
-    margin: 20px auto 0px auto;
-    padding: 0px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    box-shadow: 0px 5px 5px #000000;
-    border-radius: 5px;
-}
-
-.price li {
-    padding: 20px;
-    text-align: center;
-}
-
-.price .pricing {
-    background-color: #505050;
-    color: #FFFFFF;
-    font-size: 26px;
-}
-
-.priceBox {
-    text-align: center;
-    margin-top: 60px;
-}
-
-.pricingBox {
-    width: 100%;
-    margin: 0px auto 100px auto;
-}
-
-.pricingHeadlines {
-    margin: 80px auto 60px auto;
-    text-align: center;
-}
-
-.pricingHeadline {
-    margin: 0px auto;
-    margin-bottom: 30px;
-    font-weight: bold;
-    font-size: 36px;
-    color: #000000;
-}
-
-.pricingDescriptions {
-    color: #FFFFFF;
-    background-color: #000000;
-    font-size: 16px;
-}
-
-.pricingScreenshot {
-    width: 50vw;
-    border: 3px solid #000000;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #000000;
-    margin-bottom: 50px;
-}
-
-.pricingSubHeadline {
-    margin: 10px 50px;
-    font-size: 24px;
-    line-height: 1.5em;
-    color: #525252;
-}
-
-.pricingQuantities {
-    color: #FFFFFF;
-    background-color: #000000;
-    font-family: 'MuseoModerno';
-    font-size: 20px;
-}
-
-.pricingText {
-    border-top: 1px solid #505050;
-    color: #000000;
 }
 
 .primaryGoal {
@@ -407,18 +291,6 @@ input {
 .secondaryGoal:hover {
     color: #000000;
     background-color: #FFFFFF;
-}
-
-.selectPlan1 {
-    margin-top: 30px;
-}
-
-.selectPlan2 {
-    margin-top: 30px;
-}
-
-.selectPlan3 {
-    margin-top: 30px;
 }
 
 .sidenavtitle {
@@ -593,19 +465,6 @@ input {
         margin-right: 30px;
     }
 
-    .pricingBox {
-        width: 100%;
-        margin: 0px auto 100px auto;
-    }
-
-    .pricingScreenshot {
-        width: 70vw;
-        border: 3px solid #000000;
-        border-radius: 5px;
-        box-shadow: 0px 0px 5px #000000;
-        margin-bottom: 50px;
-    }
-
     .reverse {
         flex-direction: column-reverse;
         background-color: #FFFFFF;
@@ -721,60 +580,11 @@ input {
         color: #000000;
     }
 
-    .leadershipBox {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .overviewTitle {
         color: #000000;
         text-align: left;
         margin-left: 30px;
         margin-right: 30px;
-    }
-
-    .price {
-        list-style-type: none;
-        margin: 40px auto 0px auto;
-        padding: 0px;
-        -webkit-transition: 0.3s;
-        transition: 0.3s;
-        box-shadow: 0px 5px 5px #000000 !important;
-        border-radius: 5px;
-    }
-
-    .pricingBox {
-        width: 50%;
-        margin: 0px auto 100px auto;
-    }
-
-    .pricingHeadline {
-        margin: 0px auto;
-        margin-bottom: 30px;
-        font-weight: bold;
-        font-size: 36px;
-        color: #000000;
-    }
-
-    .pricingHeadlines {
-        margin: 80px auto 40px auto;
-        text-align: center;
-    }
-
-    .pricingScreenshot {
-        width: 70vw;
-        border: 3px solid #000000;
-        border-radius: 5px;
-        box-shadow: 0px 0px 5px #000000;
-        margin-bottom: 50px;
-    }
-
-    .pricingSubHeadline {
-        margin: 10px 50px;
-        font-size: 24px;
-        color: #505050;
-        line-height: 1.5em;
     }
 
     .reverse {
@@ -817,6 +627,12 @@ input {
         margin: 10px 50px;
         font-size: 15px;
         color: #525252;
+    }
+
+    .team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .title {
@@ -934,34 +750,6 @@ input {
         margin-right: 30px;
     }
 
-    .pricingBox {
-        width: 70%;
-        margin: 0px auto 100px auto;
-    }
-
-    .pricingHeadline {
-        margin: 0px auto;
-        margin-bottom: 30px;
-        font-weight: bold;
-        font-size: 30px;
-        color: #000000;
-    }
-
-    .pricingScreenshot {
-        width: 90vw;
-        border: 3px solid #000000;
-        border-radius: 5px;
-        box-shadow: 0px 0px 5px #000000;
-        margin-bottom: 50px;
-    }
-
-    .pricingSubHeadline {
-        margin: 10px 50px;
-        font-size: 18px;
-        line-height: 1.5em;
-        color: #525252;
-    }
-
     .question { 
         width: 100%;
         padding: 0% 3%;
@@ -1059,18 +847,6 @@ input {
         text-align: center;
         margin-left: 30px;
         margin-right: 30px;
-    }
-
-    .pricingBox {
-        width: 100%;
-        margin: 0px auto 100px;
-    }
-
-    .pricingSubHeadline {
-        margin: 10px 50px;
-        font-size: 18px;
-        line-height: 1.5em;
-        color: #525252;
     }
 
     .reverse {

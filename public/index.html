@@ -17,9 +17,9 @@
                         <a href="/" class="brand-logo survaidLogo"><img class="logoIcon" src="./images/survaid.png"/><span style="color: #026EFF;">Surv</span><span style="color: #F15E23;">aid</span></a>
                         <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                         <ul class="right hide-on-small-only">
-                            <li><a href="/participants.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 participants">Participants</a></li>
-                            <li><a href="/researchers.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 researchers">Researchers</a></li>
-                            <li><a href="/pricing.html" class="waves-effect waves-light btn secondaryGoal z-depth-0 pricing">Plans & Pricing</a></li>
+                            <li><a href="/participants.html" class="waves-effect waves-light btn secondaryGoal z-depth-0">Participants</a></li>
+                            <li><a href="/researchers.html" class="waves-effect waves-light btn secondaryGoal z-depth-0">Researchers</a></li>
+                            <li><a href="/faq.html" class="waves-effect waves-light btn secondaryGoal z-depth-0">Frequently Asked Questions</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -27,13 +27,13 @@
                     <li class="sidenavtitle"><a class="sidenavtitlelink" href="/index.html">Survaid</a></li>
                     <li><a href="/participants.html">Participants</a></li>
                     <li><a href="/researchers.html">Researchers</a></li>
-                    <li><a href="/pricing.html">Plans & Pricing</a></li>
+                    <li><a href="/faq.html">FAQ</a></li>
                 </ul>
                 <div class="introduction">
                     <h2 class="header">Capture <span style="color: #F15E23;">real-time, mobile sensor data</span> from survey participants</h2>
                     <h5 class="subheader">Build, test, and analyze custom mobile surveys that produce comprehensive reports by leveraging data from the advanced sensors embedded in contemporary smartphones</h5>
                     <div class="introButtons">
-                        <button class="waves-effect waves-light btn-large targetGoal introButton pricing">Get Started</button>
+                        <button class="waves-effect waves-light btn-large targetGoal introButton">Get Started</button>
                         <button class="waves-effect waves-light btn-large primaryGoal introButton empoweringResearch">Learn More</button>
                     </div>
                 </div>
@@ -85,11 +85,11 @@
         <div class="spacer">
             <div class="subSpacer">
                 <center>
-                    <h3><i class="material-icons titleIcon">people</i>Leadership</h3>
+                    <h3><i class="material-icons titleIcon">people</i>Our Team</h3>
                 </center>
             </div>
         </div>
-        <div class="leadershipBox">
+        <div class="team">
             <div class="memberTeam">
                 <img class="memberPhoto" src="./images/Jimmy.jpeg" />
                 <h5 class="memberName">Jimmy Liang</h5>
@@ -111,33 +111,14 @@
                 <h6 class="memberDescription">Web Application Team</h6>
             </div>
         </div>
-        <div class="spacer">
-            <div class="subSpacer">
-                <center>
-                    <h3><i class="material-icons" style="font-size: 35px; margin-right: 15px;">monetization_on</i>Plans & Pricing</h3>
-                </center>
-            </div>
-        </div>
-        <div class="priceBox">
-            <img class="pricingScreenshot" src="https://assets-global.website-files.com/5c88fc885559811e86314a3b/5d6ec64569147c322bf97c81_OG%20-%20Pricing.png" alt="pricing">
-            <h4 class="heading">Find the right plan that most efficiently fits your needs</h4>
-            <button class="waves-effect waves-light btn-large primaryGoal plans pricing">Plans & Pricing →</button>
-        </div>
         <footer class="page-footer footer">
-            <div class="row">
+            <div>
                 <div class="footerLinks">
                     <a class="footerLink" href="/participants.html">Participants</a>
                     <a class="footerLink" href="/researchers.html">Researchers</a>
-                    <a class="footerLink" href="/pricing.html">Plans & Pricing</a>
+                    <a class="footerLink" href="/faq.html">Frequently Asked Questions</a>
                 </div>
             </div>
-            <center>
-                <div class="footer-copyright copyright">
-                    <div class="container">
-                        © 2023 Survaid LLC
-                    </div>
-                </div>
-            </center>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script type="text/javascript" src="./scripts/materialize.min.js"></script>
@@ -146,18 +127,6 @@
                 $('.parallax').parallax();
 
                 $('.sidenav').sidenav();
-
-                $('.researchers').click(function() {
-                    window.location = "/researchers.html"
-                })
-
-                $('.participants').click(function() {
-                    window.location = "/participants.html"
-                })
-
-                $('.pricing').click(function() {
-                    window.location = "/pricing.html"
-                })
 
                 $('.empoweringResearch').click(function() {
                     window.location = "/EmpoweringResearch.html"
